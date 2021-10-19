@@ -1,0 +1,145 @@
+.container{
+    background-image: url(./images2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.tab{
+    width: 600px;
+    height: 840px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 15px rgb(44, 44, 43);
+}
+
+.nav{
+    background-color: rgb(38, 37, 37);
+    max-width: 600px;
+    height: 70px;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.nav h2{
+    display: inline;
+    color: rgb(20, 174, 64);
+    text-transform: uppercase;
+    position: relative;
+    bottom: 17px;
+
+}
+.navLink{
+    position: relative;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navLink:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+    box-shadow: 0px 0px 15px rgb(138, 76, 138);
+}
+.imgToHome{
+    background-image: url(/src/images/toHome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .imgToHome {
+      animation: App-logo-spin infinite 3s linear;
+    }
+  }
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+   }
+}
+
+.pToHome{
+    text-decoration: none;
+    color: rgb(11, 22, 15);
+    position: absolute;
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: small;
+}
+
+.form{
+    background-image: url('./images3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 20px;
+    /*display:flex;
+    flex-wrap:wrap*/
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.form label{
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+}
+
+.form input{
+    height: 50px;
+    width: 250px;
+    background: rgb(255, 255, 255);
+    opacity: .5;
+    border-radius: 30px;
+    display: inline;
+    padding-left: 43px;
+}
+
+.textArea{
+    resize: none;
+    padding:10px 0 0 10px;
+    width: 98%;
+    height: 160px;
+    border-radius: 30px;
+    opacity: .5;
+}
+
+.formButton{
+    opacity: .5;
+    margin: 10px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.check{
+    display: inline;
+    border-radius: 20px;
+}

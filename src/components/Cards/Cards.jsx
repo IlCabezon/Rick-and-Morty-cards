@@ -8,7 +8,9 @@ export default function Cards ({char}){
         <div className={styles.cards}>
          
             {char.map((character)=>{
-            return (<Card name={character.name}
+            return (<Card 
+             key={character.id}
+             name={character.name}
              status={character.status} 
              especies={character.species} 
              image={character.image}/>)

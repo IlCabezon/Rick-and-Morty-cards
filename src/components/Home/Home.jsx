@@ -1,8 +1,9 @@
-import {NavLink} from 'react-router-dom';
-import axios from 'axios'
+import {NavLink} from 'react-router-dom'; 
+import axios from 'axios' //npm install axios
 import styles from './Home.module.css';
 import {useState,useEffect} from 'react'; //useState guarda info, necesita una variable y una funcion que setea la variable 
-import Cards from '../Cards/Cards'
+import Cards from '../Cards/Cards';
+
 
 
 function Home(){
@@ -43,7 +44,13 @@ function Home(){
     return (
       <div className={styles.home}>
         <nav className={styles.nav}>
-           <NavLink to='/'>
+
+        <NavLink to='/'>
+              <img className={styles.toLanding}></img>
+        
+          </NavLink>
+
+           <NavLink to='/Form'>
             <img className={styles.toLanding}></img>
           </NavLink>
           <input type='text' className={styles.searchBar} placeholder='Ingrese su busqueda' onChange={handleInputChange}></input>
