@@ -1,0 +1,72 @@
+@media (max-width:500px){
+  .nav{
+    display: none;
+  }
+}
+@media (min-width:500px) {
+  .nav{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(29, 26, 29);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.searchBar{
+    margin: 10px;
+    width: 50vw;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(26, 24, 24);
+    color: rgb(204, 194, 194);
+    text-align: center;
+}   
+.toHome{
+  display: inline;
+  margin-right: 20px;
+}
+.toForm{
+  display: inline;
+  margin-right: 20px;
+}
+.input{
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.filter{
+  display: inline;
+}
+}
+
+
+
+/*@media (min-width:500px) {
+
+  .spinPortal{
+    background-image: url(../images/toHome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+    .spinPortal {
+      animation: App-logo-spin infinite 3s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+*/

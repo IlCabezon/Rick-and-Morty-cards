@@ -1,20 +1,38 @@
-
+@media (min-width:500px) {
+    .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        width: 200px;
+    }
+}
+@media (max-width:500px) {
 .card{
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
-    width: 200px;
+    width: 250px;
+    margin: 15px;
+    }
 }
+
 .card:hover{
     transform: scale(1.1);
     box-shadow: rgba(235, 233, 237, 0.912) 0px 0px 15px;
 }
 
-.image{
-    max-width: 200px;
-    border-top-left-radius:30px ;
-    border-top-right-radius:30px ;
+@media (min-width:500px) {
+   .image{
+     max-width: 200px;
+     border-top-left-radius:30px ;
+     border-top-right-radius:30px ;
+    }
 }
-
+@media (max-width:500px) {
+    .image{
+        max-width: 250px;
+        border-top-left-radius:30px ;
+        border-top-right-radius:30px ;
+    }
+}
 	
 
 .divImage{

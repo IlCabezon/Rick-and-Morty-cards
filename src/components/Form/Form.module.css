@@ -56,7 +56,7 @@
     box-shadow: 0px 0px 15px rgb(138, 76, 138);
 }
 .imgToHome{
-    background-image: url(/src/images/toHome.png);
+    background-image: url(../images/toHome.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

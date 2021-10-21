@@ -1,11 +1,11 @@
+/* eslint-disable jsx-a11y/alt-text */
 import styles from './Form.module.css';
 import {NavLink} from 'react-router-dom'; 
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 
 export default function Form(){
     const [contact,setContact] = useState({nombre:'',apellido:'',email:'',telefono:'',url:''})
-    const [error,setError] = useState(false);
-
+   
 
     function handleChange(e){
         let evento =  e.target.value;
