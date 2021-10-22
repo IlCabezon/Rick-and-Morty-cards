@@ -24,15 +24,6 @@ const [filters,setFilters] = useState(false);
     const closeFilter = <CgMenuCake className={styles.filters} onClick={()=>setFilters(!filters)} size='45px'
     color='gray'/>
   
-    function disableScroll(){  
-        var x = window.scrollX;
-        var y = window.scrollY;
-        window.onscroll = function(){ window.scrollTo(x, y) };
-    }
-    
-    function enableScroll(){  
-    window.onscroll = null;
-    }
 
     return (
          <nav className={styles.nav}>
@@ -40,7 +31,7 @@ const [filters,setFilters] = useState(false);
            <input type='text' className={styles.searchBar} placeholder='Ingrese su busqueda' onChange={onChange}></input>
 
             {!open ? openMenue : closeMenue}
-            {!open ? enableScroll() : disableScroll()}
+            
 
             {open && 
             <ul className={styles.menueElements}>
@@ -58,12 +49,18 @@ const [filters,setFilters] = useState(false);
                     {filters ? closeFilter : openFilter}
 
                     {filters && 
+                        
                         <Filter status={status} species={species} setSearch={setSearch} character={character}/>
+                        
                     }
                 </li>
                 <li className={styles.filter}>
                     Episodios
+                    <br></br>
+                    <br></br>
+                    <br></br>
                 </li>
+               
             </ul>}
 
             
