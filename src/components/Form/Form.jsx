@@ -9,7 +9,7 @@ export default function Form(){
 
     return(
         <div className={styles.container}>
-        
+            <div className={styles.fondo}></div>
             <div className={styles.tab}>
                 <div className={styles.nav}>
                     <nav>
