@@ -4,17 +4,8 @@ import {NavLink} from 'react-router-dom';
 import {useState} from 'react';
 
 export default function Form(){
-    const [contact,setContact] = useState({nombre:'',apellido:'',email:'',telefono:'',url:''})
-    
     
 
-    function handleChange(e){
-        let evento =  e.target.value;
-        setContact({...contact,[e.target.name] : evento})
-    }
-    function handleSubmit(e){
-        e.preventDefault()
-    }
 
     return(
         <div className={styles.container}>
@@ -31,29 +22,37 @@ export default function Form(){
                         <h2>customize your own character</h2> 
                     </nav>
                 </div>
+                
                 <div className={styles.formContainer}>
-                    <form className={styles.form} onSubmit={handleSubmit}>
+                    <form className={styles.form} >
+
                         <label>
                            name   
                         </label>
-                            <input type='text' name='name' placeholder='Insert the character name' onChange={handleChange}></input>
+                            <input type='text' name='name' placeholder='Insert the character name' ></input>
+
                         <label>
                             status
                         </label>
-                            <input type='text' name='status' placeholder='Insert the character status' onChange={handleChange}></input>
+                            <input type='text' name='status' placeholder='Insert the character status' ></input>
+
                         <label>
                             specie
                         </label>
-                            <input type='text' name='specie' placeholder='Insert the character specie' onChange={handleChange}></input>
+                            <input type='text' name='specie' placeholder='Insert the character specie' ></input>
+
                         <label>
                             url
                         </label>
-                        <input type='text' name='url' placeholder='Insert the character image' onChange={handleChange}></input>
+                        <input type='text' name='url' placeholder='Insert the character image' ></input>
+
                         <label>
                             description
                         </label>
-                        <textarea type='text' name='description' placeholder='Insert a description of the character' onChange={handleChange} className={styles.textArea}></textarea>
-                        <button className={styles.formButton} onClick={()=>alert('Your character was created successfully')}>Subbmit</button>
+
+                        <textarea type='text' name='description' placeholder='Insert a description of the character'  className={styles.textArea}></textarea>
+
+                        <button className={styles.formButton} >Subbmit</button>
                     </form>
                 </div>
             </div>

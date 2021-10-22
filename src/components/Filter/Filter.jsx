@@ -2,6 +2,7 @@ import styles from './Filter.module.css'
 
 
 export default function Filter({status,species,setSearch,character,filters, setFilters}){
+   
 
     function handleChangeStatus(event){
         const eventoValue= event.target.value;
@@ -12,7 +13,6 @@ export default function Filter({status,species,setSearch,character,filters, setF
         setSearch(filtered);
 
     }
-
     function handleChangeSpecie(event){
         const eventoValue = event.target.value;
         //console.log(eventoValue)

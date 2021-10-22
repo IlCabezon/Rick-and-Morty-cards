@@ -56,11 +56,10 @@ const [filters,setFilters] = useState(false);
                 </li>
                 <li className={styles.filter}>
                     Episodios
-                    <br></br>
-                    <br></br>
-                    <br></br>
                 </li>
-               
+                <br></br>
+                <br></br>
+                <br></br>
             </ul>}
 
             

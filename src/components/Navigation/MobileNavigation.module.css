@@ -44,6 +44,7 @@
         background-color: rgb(29, 26, 29);
         opacity: .9;
         overflow-y:scroll;
+        box-shadow: -5px -5px 15px rgb(31, 29, 29);
     }
 
     .home{
