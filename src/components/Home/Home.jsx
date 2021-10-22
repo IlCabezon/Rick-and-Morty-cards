@@ -68,8 +68,8 @@ function Home(){
 
     return (
       <div className={styles.home}>
-        <Navigation onChange={handleInputChange} status={status} species={species}/>
-        <MobileNavigation onChange={handleInputChange} status={status} species={species} search={search}/>
+        <Navigation onChange={handleInputChange} status={status} species={species} setSearch={setSearch} character={character}/>
+        <MobileNavigation onChange={handleInputChange} status={status} species={species} setSearch={setSearch} character={character}/>
         <div className={styles.cardsPresent}>
           <Cards char={search}/>
         </div>

@@ -9,10 +9,10 @@ import { useState} from 'react';
 import Filter from '../Filter/Filter';
 
 
-
-export default function MobileNavigation({onChange,status,species,search}){
+export default function MobileNavigation({onChange,status,species,setSearch,character}){
 const [open,setOpen] = useState(false);
 const [filters,setFilters] = useState(false);
+
 
     const openMenue = <AiOutlineMenuFold className={styles.menue} onClick={()=> setOpen(!open)} size='55px' color='gray'/>;
 
@@ -29,12 +29,10 @@ const [filters,setFilters] = useState(false);
         var y = window.scrollY;
         window.onscroll = function(){ window.scrollTo(x, y) };
     }
+    
     function enableScroll(){  
     window.onscroll = null;
     }
-
-    
-
 
     return (
          <nav className={styles.nav}>
@@ -60,10 +58,11 @@ const [filters,setFilters] = useState(false);
                     {filters ? closeFilter : openFilter}
 
                     {filters && 
-                        <Filter status={status} species={species}/>
+                        <Filter status={status} species={species} setSearch={setSearch} character={character}/>
                     }
-                    
-                    
+                </li>
+                <li className={styles.filter}>
+                    Episodios
                 </li>
             </ul>}
 

@@ -1,7 +1,9 @@
 .home{
     background-color: rgb(44, 42, 41);
     min-height: 100vh;
-
+    position: relative;
+    z-index: 5;
+ 
 }
 
 

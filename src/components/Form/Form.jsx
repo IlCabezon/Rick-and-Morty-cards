@@ -5,7 +5,11 @@ import {useState} from 'react';
 
 export default function Form(){
     const [contact,setContact] = useState({nombre:'',apellido:'',email:'',telefono:'',url:''})
-   
+    
+    function enableScroll(){  
+        window.onscroll = null;
+        }
+    enableScroll()
 
     function handleChange(e){
         let evento =  e.target.value;
@@ -23,6 +27,7 @@ export default function Form(){
                     <nav>
                           
                         <NavLink to='/home' className={styles.navLink}>
+ 
                             <img className={styles.imgToHome}/>
                             <p className={styles.pToHome}>home</p>  
                         </NavLink>
