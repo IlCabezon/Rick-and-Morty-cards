@@ -41,9 +41,12 @@ export default function InfoCards(){
                <img src={logo} className={styles.logo} />
                <img src={morty} className={styles.morty} />
                <img src={sol} className={styles.sol} />
-               <p className={styles.warning}>information classified by the citadel, do you want to access the files?</p>
-                
+                {display && 
+                    <p className={styles.warning}>information classified by the citadel, do you want to access the files?</p>
+                }               
+                    
                 {display &&
+                
                <div className={styles.buttons}>
                     <button onClick={char} className={styles.acces}>access</button>
                     <NavLink to='/home' className={styles.navlink}>
