@@ -36,12 +36,10 @@ export default function Navigation({onChange,status,species,setSearch,character}
                     
                      <li className={styles.filter}>
                         
-                        <h1 classname={styles.span}>filters</h1>
+                        <h1 className={styles.span}>filters</h1>
                         
                         <Filter status={status} species={species} setSearch={setSearch} character={character} filters={filters} setFilter={setFilters}/>
-                        <NavLink to='/episodes' className={styles.episodes}>
-                            <p className={styles.episo}>episodes</p>
-                        </NavLink>
+                        
                     </li>
                 }
                 

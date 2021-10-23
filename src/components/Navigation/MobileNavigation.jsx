@@ -55,13 +55,9 @@ const [filters,setFilters] = useState(false);
                     }
                 </li>
                 <li className={styles.filter}>
-                    <NavLink to='/episodes' className={styles.episodes}>
-                        <p className={styles.episo}>Episodes</p>
-                    </NavLink>
+                    
                 </li>
-                <br></br>
-                <br></br>
-                <br></br>
+                
             </ul>}
 
             

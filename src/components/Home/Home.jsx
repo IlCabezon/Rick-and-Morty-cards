@@ -78,8 +78,8 @@ function Home(){
         </div>
         <footer className={styles.footer}>
           <p className={styles.footerp}>Project carried out with the sole purpose of developing my skills, for more information about me:  
-            <a href='https://www.instagram.com/fcastroagus/?hl=es' about='_blank' className={styles.footerig}><BsInstagram size='20px'/></a>
-            <a href='https://www.linkedin.com/in/agus-castro-3aa044219/' about='_blank' className={styles.footerli}><BsLinkedin size='20px' /></a>
+            <a href='https://www.instagram.com/fcastroagus/?hl=es' target="_blank" className={styles.footerig}><BsInstagram size='20px'/></a>
+            <a href='https://www.linkedin.com/in/agus-castro-3aa044219/' target="_blank" className={styles.footerli}><BsLinkedin size='20px' /></a>
           </p>
         </footer>
       </div>
