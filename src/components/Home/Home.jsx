@@ -1,9 +1,11 @@
 import axios from 'axios' //npm install axios
 import styles from './Home.module.css';
 import {useState,useEffect} from 'react'; //useState guarda info, necesita una variable y una funcion que setea la variable 
+import { Route } from 'react-router';
 import Cards from '../Cards/Cards';
 import Navigation from '../Navigation/Navigation';
 import MobileNavigation from '../Navigation/MobileNavigation';
+import InfoCards from '../InfoCards/InfoCards';
 
 
 
