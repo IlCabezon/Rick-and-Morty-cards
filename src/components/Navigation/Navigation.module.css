@@ -80,7 +80,25 @@
 .filtros{
   margin: 10px;
 }
-
+.episodes{
+  text-decoration: none;
 }
-
+.episo{
+  color:rgb(64, 163, 163);
+  font-weight: 800;
+  font-size: xx-large;
+  border-top: 2px solid rgb(64, 163, 163);
+}
+}
+@media (max-width:920px) {
+    .searchBar{
+      width: 35vw;
+    }
+    .toForm{
+      font-size: large;
+    }
+    .toHome{
+      font-size: large;
+    }
+}
 

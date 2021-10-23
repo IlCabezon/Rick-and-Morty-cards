@@ -7,6 +7,22 @@ background: linear-gradient(153deg, rgba(3,37,75,1) 0%, rgba(33,33,36,1) 56%, rg
  
 }
 
+@media (min-width:1400px){
+    .footer{
+        background-color: rgba(33,33,36,1);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerp{
+        color: white;
+    }
+    .footerig{
+        margin: 20px;
+    }
+}
+
 
 
 

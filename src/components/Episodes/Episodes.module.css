@@ -1,0 +1,91 @@
+@media (max-width:2500px){
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    width: 630px;
+    height: 370px;
+    background-color: rgb(41, 36, 36);
+    opacity: .9;
+    border-radius: 20px;
+    background-image: url('../InfoCards/logo\ .png');
+    background-position-y: 235px;
+    background-position-x: 100px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 15px #000;
+    align-items: center;
+    text-align: center;
+}
+
+.paragraphe{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 10px;
+}
+.nav{
+    text-decoration: none;
+    text-align: center;;
+}
+.para{
+    font-size: x-large;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(19, 206, 118);
+    color:rgb(19, 206, 118);
+    margin: 10px;
+}
+}
+
+@media (max-width:650px) {
+    
+    .message{
+        width: 75%;
+        height: 370px;
+        background-color: rgb(41, 36, 36);
+        opacity: .9;
+        border-radius: 20px;
+        background-image: url('../InfoCards/logo\ .png');
+        background-position-y: 235px;
+        background-position-x: 70px;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        box-shadow: 5px 5px 15px #000;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+    }
+    
+    .paragraphe{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .nav{
+        text-decoration: none;
+        text-align: center;;
+    }
+    .para{
+        font-size: x-large;
+        cursor: pointer;
+        border-bottom: 2px solid rgb(19, 206, 118);
+        color:rgb(19, 206, 118);
+        margin: 10px;
+    }
+}
+@media (max-width:550px) {
+    .message{
+        background-image: none;
+    }
+}

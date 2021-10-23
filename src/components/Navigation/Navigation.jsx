@@ -25,7 +25,7 @@ export default function Navigation({onChange,status,species,setSearch,character}
                 </NavLink></li>
 
                 <li className={styles.toForm}><NavLink to='/Form' className={styles.create}>
-                    create character
+                    contact me
                 </NavLink></li>
 
                 <li className={styles.input}><input type='text' className={styles.searchBar} placeholder='Ingrese su busqueda' onChange={onChange}></input></li>
@@ -39,6 +39,9 @@ export default function Navigation({onChange,status,species,setSearch,character}
                         <h1 classname={styles.span}>filters</h1>
                         
                         <Filter status={status} species={species} setSearch={setSearch} character={character} filters={filters} setFilter={setFilters}/>
+                        <NavLink to='/episodes' className={styles.episodes}>
+                            <p className={styles.episo}>episodes</p>
+                        </NavLink>
                     </li>
                 }
                 

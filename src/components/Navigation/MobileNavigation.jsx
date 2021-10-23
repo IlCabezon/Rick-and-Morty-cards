@@ -41,7 +41,7 @@ const [filters,setFilters] = useState(false);
                 </NavLink></li>
 
                 <li className={styles.toForm}><NavLink to='/Form' className={styles.create}>
-                create character
+                contact me
                 </NavLink></li>
 
                 <li className={styles.filter}> 
@@ -55,7 +55,9 @@ const [filters,setFilters] = useState(false);
                     }
                 </li>
                 <li className={styles.filter}>
-                    Episodios
+                    <NavLink to='/episodes' className={styles.episodes}>
+                        <p className={styles.episo}>Episodes</p>
+                    </NavLink>
                 </li>
                 <br></br>
                 <br></br>
