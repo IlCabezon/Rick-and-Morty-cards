@@ -91,7 +91,8 @@
         position: absolute;
         text-transform: uppercase;
         font-weight:500;
-        font-size: small;
+        font-size: medium;
+        margin-right: 7px;
     }
 
     .form{

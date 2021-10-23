@@ -269,3 +269,50 @@
         opacity: .9;
     }
 }
+@media (max-width:400px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .info{
+        background-color: rgb(27, 26, 25);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(./fondoinfo2.jpg);
+        background-position:top;
+        background-size: 780px;
+        
+    }
+   
+    .denied{
+        margin: 5px;
+        font-size: large;
+        
+    }
+    .charinfo{
+        background-color: rgb(41, 38, 38);
+        border-radius: 10px;
+        width:290px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        opacity: .9;
+    }
+}
+@media (max-width:330px) {
+    .warning{
+        font-size: small;
+    }
+    .logo{
+        width: 200px;
+    }
+}

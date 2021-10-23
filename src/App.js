@@ -4,7 +4,7 @@ import Home from './components/Home/Home'
 import Landing  from './components/Landing/Landing';
 import Form from './components/Form/Form';
 import InfoCards from './components/InfoCards/InfoCards'
-
+import Test from './components/InfoCards/Test'
 
 function App(){
   return (
@@ -21,6 +21,9 @@ function App(){
         </Route>
         <Route path='/form'>
           <Form />
+        </Route>
+        <Route path='/test'>
+            <Test />
         </Route>
       </Switch>
     </div>

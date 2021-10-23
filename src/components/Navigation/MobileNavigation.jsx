@@ -37,7 +37,7 @@ const [filters,setFilters] = useState(false);
             <ul className={styles.menueElements}>
                
                 <li className={styles.toHome}><NavLink to='/' className={styles.home}>
-                    home <img className={styles.spinPortal} ></img>
+                    land <img className={styles.spinPortal} ></img>
                 </NavLink></li>
 
                 <li className={styles.toForm}><NavLink to='/Form' className={styles.create}>

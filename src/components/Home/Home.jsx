@@ -1,11 +1,10 @@
 import axios from 'axios' //npm install axios
 import styles from './Home.module.css';
 import {useState,useEffect} from 'react'; //useState guarda info, necesita una variable y una funcion que setea la variable 
-import { Route } from 'react-router';
 import Cards from '../Cards/Cards';
 import Navigation from '../Navigation/Navigation';
 import MobileNavigation from '../Navigation/MobileNavigation';
-import InfoCards from '../InfoCards/InfoCards';
+
 
 
 
@@ -35,10 +34,12 @@ function Home(){
      },[]) //el array monitorea los cambios de lo que este dentro del array, si el array esta vacia solo se aplica cuando se monta el componente
 
     async function getCharacters (){
-        const api = await axios.get('https://rickandmortyapi.com/api/character');
-        return (api.data.results) //devuelve una promesa asincrona
+       
+          const api = await axios.get(`https://rickandmortyapi.com/api/character/`);
+          return (api.data.results) //devuelve una promesa asincrona
+        
     }
-
+    console.log(character)
     function handleInputChange(event){
       const eventoValue = event.target.value;
       let filtered = character.filter((element)=>{

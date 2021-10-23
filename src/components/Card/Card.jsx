@@ -10,9 +10,9 @@ export default function Card({name , status, especies, image,characterId}){
                </NavLink>
             </div>
             <div className={styles.info}>
-                <h3 className={styles.names}>{name}</h3>
-                <p>{`Estatus: ${status}`}</p>
-                <p>{`Especie: ${especies}`}</p>
+                <h2 className={styles.names}>{name}</h2>
+                <p className={styles.infor}>{`Estatus: ${status}`}</p>
+                <p className={styles.infor}>{`Especie: ${especies}`}</p>
                
             </div>
         </div>

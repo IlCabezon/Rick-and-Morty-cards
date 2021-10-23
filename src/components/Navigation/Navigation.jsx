@@ -21,7 +21,7 @@ export default function Navigation({onChange,status,species,setSearch,character}
         <nav className={styles.nav}>
             <ul className={styles.navi}>
                 <li className={styles.toHome}><NavLink to='/' className={styles.home}>
-                    home
+                    landing
                 </NavLink></li>
 
                 <li className={styles.toForm}><NavLink to='/Form' className={styles.create}>

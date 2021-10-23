@@ -31,8 +31,9 @@
     border-radius: 50%;
     
 }
-.p{
+.text{
     position: absolute;
+    color: #000;
 }
 
 .imgPortal{

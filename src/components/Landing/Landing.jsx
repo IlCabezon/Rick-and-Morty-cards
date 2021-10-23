@@ -7,7 +7,7 @@ export default function Landing(){
          <div className={styles.background}>
             <NavLink to='/home' className={styles.btn}>
                 <img src={img} className={styles.imgPortal} alt='portal'/>
-                <p className={styles.p}>TO HOME</p>
+                <p className={styles.text}>TO HOME</p>
                 
             </NavLink>
         </div>
